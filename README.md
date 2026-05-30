@@ -1,6 +1,4 @@
 # juaravibecoding-stella
-Juaravibecoding - Google dev Indoenesia
-# 🌟 STELLA Dual-Core AI
 **Inclusive Tele-Robotics & Enterprise Sign Language Translator**
 
 Submission for **Google Developer Indonesia: #JuaraVibeCoding 2026**
