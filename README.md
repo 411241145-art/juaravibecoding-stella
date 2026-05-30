@@ -1,33 +1,33 @@
-# juaravibecoding-stella
+# 🪐 STELLA ORBIT
 **Inclusive Tele-Robotics & Enterprise Sign Language Translator**
+*Submission for Google Developer Indonesia: #JuaraVibeCoding 2026*
 
-Submission for **Google Developer Indonesia: #JuaraVibeCoding 2026**
+## 🚨 Latar Belakang Masalah (The Problem)
+Sektor logistik dan industri importir alat berat memiliki dua tantangan besar saat ini:
+1. **Minimnya Aksesibilitas:** Pekerja lapangan yang merupakan teman-teman difabel (Tuli/Bisu) sering kali kesulitan memberikan aba-aba yang cepat dan akurat kepada operator alat berat, yang mana berpotensi mengucilkan mereka dari ekosistem kerja industri berat.
+2. **Risiko Keselamatan Kerja:** Kesalahan komunikasi sekecil apa pun dalam mengendalikan alat berat (seperti *forklift* atau *crane*) dapat berakibat fatal bagi keselamatan fisik pekerja di sekitarnya.
 
-![Gemini 3.1 Pro](https://img.shields.io/badge/Gemini%203.1%20Pro-AI%20Engine-4285F4?style=for-the-badge&logo=google)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Vision-EA4335?style=for-the-badge)
+## 💡 Solusi: STELLA ORBIT
+**STELLA (Spatial Tele-Robotics Logical & Linguistic Architecture)** hadir sebagai sistem AI penengah yang memecahkan kedua masalah tersebut sekaligus melalui pendekatan **Orbit**:
 
-## 📖 Latar Belakang Proyek
-Di sektor logistik dan importir alat berat, komunikasi yang cepat dan keselamatan kerja adalah harga mati. Namun, bagaimana jika operator atau pekerja di lapangan adalah teman-teman difabel (Tuli/Bisu)? 
+* **Core 1: Kinetic Translator (Inklusivitas).** Stella membaca matriks koordinat kerangka tangan secara *real-time* dan menerjemahkan bahasa isyarat pekerja menjadi teks instruksi natural yang mudah dibaca oleh siapa saja.
+* **Core 2: Saturn Nodes Evaluator (Keselamatan).** Saat Stella mendeteksi bahwa isyarat tersebut adalah perintah mesin (misal: "Maju", "Angkat"), sistem tidak langsung mengeksekusinya. Stella akan memicu simulasi Node keamanan satelit (seperti Node TITAN) untuk memvalidasi risiko manuver sebelum memberikan status `APPROVED` atau `REJECTED`.
 
-**STELLA (Spatial Tele-Robotics Logical & Linguistic Architecture)** hadir sebagai solusi *Enterprise* yang menggabungkan Inklusivitas dan Keamanan Mesin. Menggunakan ketajaman **Gemini 3.1 Pro** dan pelacakan spasial **MediaPipe**, Stella membaca pergerakan gestur tangan secara *real-time* dan memprosesnya melalui dua "Core" (inti) secara bersamaan.
+## ⚙️ Cara Kerja & Teknologi (Tech Stack)
+Aplikasi ini dirancang ringan dan aman. Alih-alih mengirimkan video berat ke *server*, sistem ini merender video di *browser* dan hanya mengirimkan titik matriks JSON ke AI.
+* **AI Brain:** Google Gemini 3.1 Pro (Menganalisis matriks menjadi keputusan spasial).
+* **Vision Sensor:** Google MediaPipe Hands (Client-side rendering).
+* **Backend Engine:** Python, FastAPI, Uvicorn.
+* **Frontend UI:** HTML5, JS, Tailwind CSS (LUMEN UI System).
 
-## ⚙️ Arsitektur Dual-Core
-1. **Core 1: Kinetic Translator (Aksesibilitas)** Stella bertindak sebagai ahli linguistik, menerjemahkan bahasa isyarat dinamis (ayunan dan koordinat 3D) menjadi teks *subtitle* bahasa Indonesia yang natural agar mudah dipahami oleh pekerja awam.
-2. **Core 2: Saturn Nodes Evaluator (Keselamatan Tele-Robotik)**
-   Jika gestur yang terdeteksi adalah sebuah "Komando Alat Berat" (misal: Maju, Angkat Beban, Berhenti Darurat), Stella seketika memicu simulasi 7 Node Satelit Saturnus. Node **TITAN** akan mengevaluasi risiko benturan fisik, sementara Node **TETHYS** memastikan kelancaran gerak mesin sebelum perintah dikirim ke *database* (Status: APPROVED / REJECTED).
+## 🚀 Instalasi Lokal
+Jika Anda ingin mengevaluasi mesin ini secara lokal:
+1. *Clone* repositori ini: `git clone https://github.com/USERNAME-GITHUB-KAMU/NAMA-REPOSITORI-KAMU.git`
+2. Instal dependensi: `pip install -r requirements.txt`
+3. Masukkan kunci rahasia Anda ke dalam *Environment Variables* dengan nama `GEMINI_API_KEY`.
+4. Jalankan *server*: `python -m uvicorn main:app --reload`
+5. Buka `index.html` pada browser Anda.
 
-## 🛠️ Tech Stack
-* **AI Brain:** Google Gemini 3.1 Pro (via `google-genai` SDK)
-* **Computer Vision:** Google MediaPipe Hands (Client-side rendering)
-* **Backend:** Python, FastAPI, Uvicorn (RESTful API)
-* **Frontend:** HTML5, JavaScript, Tailwind CSS (LUMEN UI Design System)
-
-## 🚀 Cara Menjalankan Aplikasi Secara Lokal
-
-### 1. Kloning Repositori & Instalasi
-Pastikan Python sudah terinstal di sistem Anda.
-```bash
-git clone [https://github.com/USERNAME-GITHUB-KAMU/stella-dualcore-ai.git](https://github.com/USERNAME-GITHUB-KAMU/stella-dualcore-ai.git)
-cd stella-dualcore-ai
-pip install -r requirements.txt
+---
+**Kevin Gunawan**
+*S1 Teknik Informatika - Universitas Dian Nusantara (UNDIRA)*
